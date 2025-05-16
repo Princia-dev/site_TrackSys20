@@ -6,6 +6,8 @@ window.onload = async function () {
         const data = await response.json();
         const now = new Date().toLocaleString();
 
+        console.log("Données récuperees:", data);
+
         const infos = {
             ip: data.ip,
             ville: data.city,
